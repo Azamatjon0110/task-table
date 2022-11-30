@@ -1,0 +1,122 @@
+.bg-img{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/images/background.jpg");
+}
+.row{
+  position: relative;
+  z-index: 2;
+  max-height: 100vh;
+}
+
+.col-4{
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.col-4::-webkit-scrollbar{
+  width: 10px;
+  padding-left: 10px;
+  background: rgba(2,0,36, 0.4);
+}
+.col-4::-webkit-scrollbar-thumb{
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 5%, rgba(3,1,45,1) 10%, rgba(3,3,87,0.6421919109440651) 67%, rgba(9,9,121,1) 99%, rgba(6,6,88,1) 100%, rgba(6,6,90,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.item{
+  background-color: transparent;
+  background-color: #1e1e1e80;
+  border: 2px solid #92bab63a;
+}
+
+.item-id{
+  color: #44c6cfe4;
+}
+
+.item-email{
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.item-email::before{
+  position: absolute;
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  left: 0px;
+  background-image: url("/images/icons8-edit-message-32.png");
+  background-size: contain;
+}
+
+.border-link{
+  width: 180px;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.link{
+  position: relative;
+  padding-left: 30px;
+}
+
+.link::before{
+  position: absolute;
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.location-link::before{
+  background-image: url("/images/icons8-location-48.png");
+}
+
+.site-link::before{
+  background-image: url("/images/icons8-geography-30.png");
+}
+
+.phone-link::before{
+  background-image: url("/images/icons8-phone-64.png");
+}
+
+.com-info{
+  color: lightskyblue;
+}
+
+.company-name{
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.company-name::before{
+  position: absolute;
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  left: 0;
+  background-image: url("/images/icons8-company-64.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn{
+  color: powderblue;
+  border: 1px solid rgb(201, 239, 237);
+}

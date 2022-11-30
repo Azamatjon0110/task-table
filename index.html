@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="bg-img"></div>
+
+  <div class="row p-3 w-100">
+    <div class="col-4">
+      <ul class="user-list list-unstyled"></ul>
+    </div>
+    <div class="col-4">
+      <ul class="post-list list-unstyled">
+
+      </ul>
+    </div>
+    <div class="col-4">
+      <ul class="comment-list list-unstyled"></ul>
+    </div>
+  </div>
+
+  <template class="temp-user">
+    <li class="item p-4 mb-3 rounded-2 ">
+      <div class="box text-white mb-3">
+        <div class="w-100 d-flex justify-content-between">
+          <h3 class="item-name text-info">Name</h3>
+          <p class="item-id mb-0">Id</p>
+        </div>
+        <h3 class="item-fullname mb-2">Fullname</h3>
+        <a class="item-email d-block mb-3 text-decoration-none text-white" href="" target="blank">asdsdfsdfd</a>
+        <div class=" d-flex justify-content-center flex-wrap mb-4">
+          <div class="border-link p-2 me-3 mb-3">
+            <a class="link text-decoration-none text-white location-link" href="">Geo location</a>
+          </div>
+          <div class="border-link p-2 mb-3">
+            <a class="link text-decoration-none text-white phone-link" href="" >Phone number</a>
+          </div>
+          <div class="border-link p-2">
+            <a class="link text-decoration-none text-white site-link" href="" target="blank">asdasdasd</a>
+          </div>
+        </div>
+        <h4 class="com-info mb-3"> Company info</h4>
+        <h4 class="pl-4 company-name">company name</h4>
+        <p class="company-catch mb-2">asda</p>
+        <p class="company-bs mb-2">asdasd</p>
+        <button class="btn">Posts</button>
+      </div>
+    </li>
+  </template>
+
+  <template class="post-temp">
+    <li class="item p-4 mb-3 rounded-2 ">
+      <div class="box text-white mb-3">
+        <div class="w-100 d-flex justify-content-between">
+          <h4 class="item-name text-info post-title">Name</h4>
+          <p class="item-id mb-0 post-id">Id</p>
+        </div>
+        <p class="company-bs mb-2 post-bs">asdasd</p>
+        <button class="btn">Comments</button>
+      </div>
+    </li>
+  </template>
+
+  <template class="comment-temp">
+    <li class="item p-4 mb-3 rounded-2 ">
+      <div class="box text-white mb-3">
+        <div class="w-100 d-flex justify-content-between">
+          <h4 class="item-name text-info">Name</h4>
+          <p class="item-id mb-0">Id</p>
+        </div>
+        <p class="company-bs mb-0">asdasd</p>
+      </div>
+    </li>
+  </template>
+
+
+  <script src="./main.js"></script>
+</body>
+</html>
